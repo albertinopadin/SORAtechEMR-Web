@@ -1,0 +1,28 @@
+<title>SORAtech</title>
+</head>
+<body>
+<div id="container" class="bg-color-white">
+	<div class="nav-bar">
+		<div class="nav-bar-inner padding10">
+			<span class="element">
+			<?
+				$path = explode('/', dirname($_SERVER['SCRIPT_FILENAME']));
+				$path = array_slice($path, 4);
+				$path = array_reverse($path);
+				foreach ($path as $index => $directory)
+				{
+					if($index==0)
+					{
+						$breadcrumbs = ucfirst($directory);
+					}
+					else
+					{
+						$breadcrumbs = '<a class="fg-color-white" href="'.$href.'">'.ucfirst($directory).'</a> -> '.$breadcrumbs;
+					}
+					$href .= '../';
+				}
+				echo $breadcrumbs;
+			?>
+			</span>
+		</div>
+	</div>

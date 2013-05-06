@@ -1,0 +1,32 @@
+.blog-post-meetings, .blog-post-susana, .blog-post-omar, .blog-post-roberto, .blog-post-albertino
+{
+	width:100%;
+	clear:both;
+	padding:10px;
+	margin:10px 0px 10px 0px;
+}
+
+.blog-post-meetings
+{
+	border-left:3px solid #00a300;
+}
+
+.blog-post-susana
+{
+	border-left:3px solid #9f00a7;
+}
+
+.blog-post-omar
+{
+	border-left:3px solid #e3a21a;
+}
+
+.blog-post-roberto
+{
+	border-left:3px solid #603cba;
+}
+
+.blog-post-albertino
+{
+	border-left:3px solid #b91d47;
+}

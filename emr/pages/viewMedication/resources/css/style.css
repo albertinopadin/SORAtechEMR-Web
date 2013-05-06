@@ -1,0 +1,12 @@
+.section
+{
+	width:100%;
+	clear:both;
+	padding-left:10px;
+	border-left:3px solid #2d89ef;
+}
+
+.input-control.text
+{
+	width:200px;
+}

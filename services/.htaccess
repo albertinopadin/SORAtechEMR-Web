@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteRule ^(emr)/isValidKey/?$									handlers/emr_isValidKey_Handler.php [L]
+RewriteRule ^(emr)/(patients)/?$									handlers/emr_patients_Handler.php [L]
+RewriteRule ^(emr)/(patients)/([0-9]+)/?$							handlers/emr_patients_id_Handler.php?patientId=$3 [QSA,L]
+RewriteRule ^(emr)/(patients)/([0-9]+)/(conditions)/?$				handlers/emr_patients_id_conditions_Handler.php?patientId=$3 [QSA,L]
+RewriteRule ^(emr)/(patients)/([0-9]+)/(conditions)/([0-9]+)/?$		handlers/emr_patients_id_conditions_id_Handler.php?patientId=$3&conditionId=$5 [QSA,L]
+RewriteRule ^(emr)/(patients)/([0-9]+)/(medications)/?$				handlers/emr_patients_id_medications_Handler.php?patientId=$3 [QSA,L]
+RewriteRule ^(emr)/(patients)/([0-9]+)/(medications)/([0-9]+)/?$	handlers/emr_patients_id_medications_id_Handler.php?patientId=$3&medicationId=$5  [QSA,L]
+RewriteRule ^(emr)/(patients)/([0-9]+)/(visits)/?$					handlers/emr_patients_id_visits_Handler.php?patientId=$3 [QSA,L]
+RewriteRule ^(emr)/(patients)/([0-9]+)/(visits)/([0-9]+)/?$			handlers/emr_patients_id_visits_id_Handler.php?patientId=$3&visitId=$5  [QSA,L]

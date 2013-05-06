@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteRule ^(patients)/?$ pages/viewPatients/ [L]
+RewriteRule ^(patients)/([0-9]+)/?$ pages/viewPatient/?patientId=$2 [L]
+RewriteRule ^(patients)/([0-9]+)/(conditions)/([0-9]+)/?$ pages/viewCondition/?patientId=$2&conditionId=$4 [L]
+RewriteRule ^(patients)/([0-9]+)/(medications)/([0-9]+)/?$ pages/viewMedication/?patientId=$2&medicationId=$4 [L]
+RewriteRule ^(patients)/([0-9]+)/(visits)/([0-9]+)/?$ pages/viewVisit/?patientId=$2&visitId=$4 [L]

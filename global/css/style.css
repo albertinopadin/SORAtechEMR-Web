@@ -1,0 +1,18 @@
+body
+{
+	background-color:#EEEEEE;
+}
+
+#container
+{
+	margin:auto;
+	padding:20px 0px;
+	width:960px;
+	border:1px solid gray;
+	height:auto;
+}
+
+.page.secondary .page-region .page-region-content 
+{
+	padding-right:20px;
+}

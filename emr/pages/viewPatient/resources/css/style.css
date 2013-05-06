@@ -1,0 +1,30 @@
+.section
+{
+	width:100%;
+	clear:both;
+	padding-left:10px;
+	border-left:3px solid #2d89ef;
+}
+
+.input-control.text
+{
+	width:200px;
+}
+
+#conditionsFilterInput
+{
+	background:white url(../images/filter.png) left no-repeat;
+	padding-left:20px;
+}
+
+#medicationsFilterInput
+{
+	background:white url(../images/filter.png) left no-repeat;
+	padding-left:20px;
+}
+
+#visitsFilterInput
+{
+	background:white url(../images/filter.png) left no-repeat;
+	padding-left:20px;
+}
